@@ -44,7 +44,7 @@ public class DeptController {
 	public Object discovery()
 	{
 		List<String> list = client.getServices();
-		System.out.println("**********" + list);
+		System.out.println("*******************" + list);
 
 		List<ServiceInstance> srvList = client.getInstances("MICROSERVICECLOUD-DEPT");
 		for (ServiceInstance element : srvList) {
